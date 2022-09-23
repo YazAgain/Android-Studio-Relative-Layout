@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tx_Hi"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:text="Hi!"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_above="@+id/ly_main"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ly_main">
+
+        <EditText
+            android:id="@+id/tx_email_address"
+            android:layout_width="304dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/bt_continue"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00AD83"
+            android:layout_below="@+id/tx_email_address"
+            android:text="Continue"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/tx_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_below="@id/bt_continue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_fb"
+            android:layout_width="44dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/facebook"
+            android:layout_below="@+id/tx_or"/>
+        <Button
+            android:id="@+id/bt_fblink"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Continue with Facebook"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tx_or"
+            android:layout_toRightOf="@+id/img_fb"/>
+        <ImageView
+            android:id="@+id/img_go"
+            android:layout_width="44dp"
+            android:layout_height="47dp"
+            android:src="@drawable/google"
+            android:layout_below="@id/img_fb"/>
+        <Button
+            android:id="@+id/bt_googlelink"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Continue with Google"
+            android:textColor="@color/black"
+            android:layout_below="@id/bt_fblink"
+            android:layout_toRightOf="@id/img_go"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_apple"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/img_go"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:src="@drawable/apple" />
+        <Button
+            android:id="@+id/bt_applelink"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Continue with Apple"
+            android:textColor="@color/black"
+            android:layout_below="@id/bt_googlelink"
+            android:layout_toRightOf="@id/img_apple"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tx_signup"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_below="@+id/bt_applelink"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tx_forgot_password"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:text="Forgot Your Password?"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tx_signup"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#00AD83"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
